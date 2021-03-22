@@ -1,0 +1,21 @@
+{
+    "name": "Ficus",
+    "short_name": "Ficus",
+    "icons": [
+      {
+        "src": "img/icons/icon-192x192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "img/icons/icon-512x512.png",
+        "sizes": "512x512",
+        "type": "image/png"
+      }
+    ],
+    "theme_color": "#0e908e",
+    "background_color": "#0e908e",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "/"
+  }

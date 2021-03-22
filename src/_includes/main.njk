@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="HandheldFriendly" content="True">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0e908e">
+  <base href="/">
+  <link rel="icon" type="image/svg+xml" href="/img/favicon.svg">
+  <link rel="alternate icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/img/icons/icon-192x192.png">
+  <meta name="description" content="{{ description }}">
+  <title>{{ title }}</title>
+  {# {% include "favicons.njk" %} #}
+  {% set css %}
+    {% include "../css/docs.css" %}
+  {% endset %}
+  {% if project.environment == "production" %}
+    <style>{{ css | cssmin | safe }}</style>
+  {% else %}
+    <style>{{ css | safe }}</style>
+  {% endif %}
+  <link rel="manifest" href="/ficus.webmanifest">
+</head>
+<body>
+  {# {% include "header.njk" %} #}
+  <main>
+    {{ content | safe }}
+  </main>
+  {# {% include "footer.njk" %} #}
+</body>
+</html>
