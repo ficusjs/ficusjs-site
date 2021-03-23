@@ -1,0 +1,25 @@
+name: Contentful publish and deploy to Github pages
+on:
+  repository_dispatch:
+    types: [publish-event]
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploying to Github pages
+    env:
+      CONTENTFUL_SPACE: ${{ secrets.CONTENTFUL_SPACE }}
+      CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set-up NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm install
+      - run: npm run build
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v3
+        with:
+          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: build

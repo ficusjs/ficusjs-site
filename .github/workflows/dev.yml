@@ -1,0 +1,22 @@
+name: Test and deploy to Surge
+on:
+  push:
+    branches:
+      - dev
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    name: Deploying to Surge
+    env:
+      CONTENTFUL_SPACE: ${{ secrets.CONTENTFUL_SPACE }}
+      CONTENTFUL_ACCESS_TOKEN: ${{ secrets.CONTENTFUL_ACCESS_TOKEN }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Set-up NodeJS
+        uses: actions/setup-node@v1
+        with:
+          node-version: 12
+      - run: npm install -g surge
+      - run: npm install
+      - run: npm run build
+      - run: surge ./build ficusjs-site.surge.sh --token ${{ secrets.SURGE_TOKEN }}
