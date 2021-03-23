@@ -1,10 +1,11 @@
+require('dotenv').config()
 const contentful = require('contentful')
 // const { documentToHtmlString } = require('@contentful/rich-text-html-renderer')
 const fs = require('fs')
 
 const config = {
-  space: 'slwnpo94m3dp',
-  accessToken: 'YJAu9HpECf5JjFqeA4uU9D4Vwn4VovSxGwSMc31RIio'
+  space: process.env.CONTENTFUL_SPACE,
+  accessToken: process.env.CONTENTFUL_ACCESS_TOKEN
 }
 
 const client = contentful.createClient(config)
