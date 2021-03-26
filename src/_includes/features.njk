@@ -1,5 +1,8 @@
-<ul>
+<div class="features">
   {%- for post in collections.feature -%}
-    <li>{{ post.data.title }}</li>
+    <div class="feature">
+      <h2>{{ post.data.title }}</h2>
+      <p>{{ post.data.shortDesc }}</p>
+    </div>
   {%- endfor -%}
-</ul>
+</div>
