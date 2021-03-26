@@ -6,9 +6,18 @@
   "scripts": {
     "build": "run-p build:*",
     "build:11ty": "cross-env NODE_ENV=production eleventy --input=src --output=build",
+    "build:js": "rollup -i src/js/main-prod.js -o build/js/main.js -f es -p \"terser={mangle: { keep_fnames: true, toplevel: true, module: true }}\" -p \"filesize={}\"",
+    "prebuild": "rimraf build && mkdirp build && mkdirp build/js && run-s copy:build content",
+    "copy:build": "run-p copy:build:*",
+    "copy:build:favicon": "ncp src/favicon.ico build/favicon.ico",
+    "copy:build:manifest": "ncp src/ficus.webmanifest build/ficus.webmanifest",
+    "copy:build:cname": "ncp CNAME build/CNAME",
+    "copy:build:robots": "ncp src/robots.txt build/robots.txt",
+    "copy:build:img": "ncp src/img build/img",
     "content": "node contentful.js",
     "dev": "run-p dev:*",
     "dev:11ty": "cross-env NODE_ENV=development eleventy --input=src --output=tmp --serve",
+    "dev:server": "http-server src --port 8000 --cors",
     "predev": "rimraf tmp && mkdirp tmp && run-s content"
   },
   "repository": {
@@ -24,13 +33,19 @@
   "devDependencies": {
     "@11ty/eleventy": "0.12.1",
     "@contentful/rich-text-html-renderer": "14.1.2",
+    "@ficusjs/components": "1.0.0-alpha.11",
+    "@ficusjs/styles": "1.0.0-alpha.7",
     "clean-css": "5.1.2",
     "contentful": "8.2.0",
     "cross-env": "7.0.3",
     "dotenv": "8.2.0",
     "html-minifier": "4.0.0",
+    "http-server": "0.12.3",
     "npm-run-all": "4.1.5",
     "rimraf": "3.0.2",
+    "rollup": "2.42.4",
+    "rollup-plugin-filesize": "9.1.1",
+    "rollup-plugin-terser": "7.0.2",
     "slugify": "1.5.0",
     "standard": "16.0.3"
   }
