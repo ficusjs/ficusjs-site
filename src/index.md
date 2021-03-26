@@ -1,5 +1,5 @@
 ---
-layout: "main.njk"
+layout: "home.njk"
 title: "Ficus"
 ---
 # Welcome to Ficus
