@@ -1,0 +1,8 @@
+.fc-navbar__collapse {
+  justify-content: flex-end;
+}
+
+.navbar__logo {
+  align-items: center;
+  display: flex;
+}
