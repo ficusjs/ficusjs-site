@@ -14,7 +14,7 @@
       "id": "iAcyEJWQmxwXnqAQQDGaa",
       "type": "Entry",
       "createdAt": "2021-03-22T12:16:06.435Z",
-      "updatedAt": "2021-03-22T12:16:06.435Z",
+      "updatedAt": "2021-03-27T16:37:27.837Z",
       "environment": {
         "sys": {
           "id": "master",
@@ -22,7 +22,7 @@
           "linkType": "Environment"
         }
       },
-      "revision": 1,
+      "revision": 5,
       "contentType": {
         "sys": {
           "type": "Link",
@@ -35,23 +35,12 @@
     "fields": {
       "title": "Welcome to the Ficus blog",
       "date": "2021-03-22",
+      "author": "Matt Levy",
       "summary": "A blog about building FicusJS, CSS and web components.",
       "postBody": {
         "nodeType": "document",
         "data": {},
         "content": [
-          {
-            "nodeType": "paragraph",
-            "content": [
-              {
-                "nodeType": "text",
-                "value": "Welcome to the Ficus blog!",
-                "marks": [],
-                "data": {}
-              }
-            ],
-            "data": {}
-          },
           {
             "nodeType": "paragraph",
             "content": [
