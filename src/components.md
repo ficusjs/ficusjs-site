@@ -6,3 +6,7 @@ title: "Components"
 shortDesc: "A library of styled custom elements and HTML elements"
 ---
 # Components
+
+Coming soon!
+
+[https://github.com/ficusjs/ficusjs-components](https://github.com/ficusjs/ficusjs-components)

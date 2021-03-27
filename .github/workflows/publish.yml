@@ -15,11 +15,15 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 12
+      - run: npm install -g surge
       - run: npm install
       - run: npm run build
-      - name: Deploy
-        uses: JamesIves/github-pages-deploy-action@releases/v3
-        with:
-          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
-          BRANCH: gh-pages
-          FOLDER: build
+      - run: surge ./build ficusjs-site.surge.sh --token ${{ secrets.SURGE_TOKEN }}
+#      - run: npm install
+#      - run: npm run build
+#      - name: Deploy
+#        uses: JamesIves/github-pages-deploy-action@releases/v3
+#        with:
+#          ACCESS_TOKEN: ${{ secrets.ACCESS_TOKEN }}
+#          BRANCH: gh-pages
+#          FOLDER: build

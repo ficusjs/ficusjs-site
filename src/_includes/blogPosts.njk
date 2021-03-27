@@ -1,0 +1,9 @@
+<div class="blog-posts">
+  {%- for post in blogPages -%}
+    <div class="feature">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.summary }}</p>
+      <p><a href="{{ post.url }}" class="fc-button">Read more</a></p>
+    </div>
+  {%- endfor -%}
+</div>
