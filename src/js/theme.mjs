@@ -6,14 +6,21 @@ const logo = document.getElementById('ficus-logo')
 const darkThemeLogo = document.getElementById('ficus-logo-white')
 const currentTheme = window.localStorage.getItem('theme')
 
+function setDarkTheme () {
+  toggleSwitch.checked = true
+  ball.setAttribute('style', 'transform:translatex(100%);')
+  logo.style.display = 'none'
+  darkThemeLogo.style.display = 'block'
+}
+
 if (currentTheme) {
   document.documentElement.setAttribute('data-theme', currentTheme)
   if (currentTheme === 'dark') {
-    toggleSwitch.checked = true
-
-    ball.setAttribute('style', 'transform:translatex(100%);')
-    logo.style.display = 'none'
-    darkThemeLogo.style.display = 'block'
+    setDarkTheme()
+  }
+} else {
+  if (window.matchMedia('(prefers-color-scheme: dark)').media !== 'not all') {
+    setDarkTheme()
   }
 }
 

@@ -15,15 +15,13 @@
       </a>
     </nav>
   </section>
-  <button type="button" class="fc-navbar__toggler">
+  <button type="button" class="fc-navbar__toggler" aria-label="Navbar toggle button">
     <svg><use xlink:href="#menu" href="#menu"></use></svg>
   </button>
-  <section class="fc-navbar__collapse">
-    <nav>
-      <a href="https://dev.to/ficusjs/" target="_blank" rel="noreferrer noopener" class="fc-button fc-button--link">Blog</a>
-      <a href="https://github.com/ficusjs" target="_blank" rel="noreferrer noopener" class="fc-button fc-button--link">GitHub</a>
-      <a href="https://twitter.com/ficusjs" target="_blank" rel="noreferrer noopener" class="fc-button fc-button--link">Twitter</a>
-      {% include "theme-toggle.njk" %}
-    </nav>
-  </section>
+  <nav class="fc-navbar__collapse">
+    <a href="https://dev.to/ficusjs" target="_blank" rel="noreferrer noopener" class="fc-button fc-button--link">Blog</a>
+    <a href="https://github.com/ficusjs" target="_blank" rel="noreferrer noopener" class="fc-button fc-button--link">GitHub</a>
+    <a href="https://twitter.com/ficusjs" target="_blank" rel="noreferrer noopener" class="fc-button fc-button--link">Twitter</a>
+    {% include "theme-toggle.njk" %}
+  </nav>
 </fc-navbar>
