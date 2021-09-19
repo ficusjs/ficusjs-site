@@ -7,6 +7,10 @@ shortDesc: "Lightweight client-side router that supports history and hash routin
 ---
 # Router
 
-Coming soon!
+Lightweight standalone client-side router that supports history and hash routing.
 
-[https://github.com/ficusjs/ficusjs-router](https://github.com/ficusjs/ficusjs-router)
+For multiple routes in a single page application, this simple client-side router is responsible for traversing a list of routes, finding the first matching route by string path, rendering any HTML returned from that route's action method into an outlet within the application.
+
+## Read the full documentation
+
+To read the full documentation visit [https://router.ficusjs.org](https://router.ficusjs.org)

@@ -7,6 +7,8 @@ shortDesc: "Lazy load ES modules and ES5 scripts or both based on dynamic paths"
 ---
 # Script loader
 
-Coming soon!
+Lightweight script loader for lazy loading ES modules and ES5 scripts or both based on dynamic paths.
 
-[https://github.com/ficusjs/ficusjs-script](https://github.com/ficusjs/ficusjs-script)
+## Read the full documentation
+
+To read the full documentation visit [https://script.ficusjs.org](https://script.ficusjs.org)
