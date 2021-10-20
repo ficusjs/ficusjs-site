@@ -1,6 +1,6 @@
 <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
 	 viewBox="0 0 464.472 104.146" enable-background="new 0 0 464.472 104.146" xml:space="preserve">
-<style>/* <![CDATA[ */
+<style>
 .logo-fill-color {
   fill: #0d0d0d;
 }
@@ -12,7 +12,7 @@
 html[data-theme="dark"] .logo-fill-color {
   fill: #ffffff;
 }
-/* ]]> */</style>
+</style>
 <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="21.4177" y1="9.6627" x2="85.0956" y2="97.7584">
 	<stop  offset="0.2011" style="stop-color:#63E48B"/>
 	<stop  offset="0.7203" style="stop-color:#54E4E5"/>
