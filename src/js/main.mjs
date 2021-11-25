@@ -1,7 +1,8 @@
-import { use } from 'https://cdn.skypack.dev/ficusjs'
-import { html, renderer } from 'https://cdn.skypack.dev/@ficusjs/renderers/htm'
-import { module as navbarModule } from 'https://cdn.skypack.dev/@ficusjs/components/custom-elements/navbar'
+import { use } from './lib/core.mjs'
+import { createComponent } from './lib/component.mjs'
+import { html, renderer } from './lib/htm.mjs'
+import { module as navbarModule } from './lib/navbar.mjs'
 import './theme.mjs'
 import './fonts.mjs'
 
-use(navbarModule, { renderer, html })
+use(navbarModule, { createComponent, renderer, html })
