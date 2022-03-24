@@ -9,10 +9,11 @@ shortDesc: "A set of lightweight functions for developing applications using web
 
 FicusJS is a set of lightweight functions for developing web applications. It is focused on:
 
-- web components
-- managing state
-- pub/sub event bus
-- reuse with modules
+- Web components
+- Managing state
+- Pub/sub event bus
+- Internationalization (i18n)
+- Reuse with modules
 
 ## Web components
 
@@ -31,6 +32,10 @@ Most web applications need to manage state. State can mean different things depe
 ## Pub/sub event bus
 
 For communication between components, the event bus provides a topic-based publish/subscribe API.
+
+## Internationalization (i18n)
+
+Provides functions for internationalization (i18n) and localization in components.
 
 ## Reuse with modules
 

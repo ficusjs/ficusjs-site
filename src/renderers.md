@@ -15,9 +15,10 @@ This allows any renderer to be plugged into a component.
 The following renderers have been tested with FicusJS and are available as minified bundles in this package to make working with them much easier.
 
 - [htm](https://www.npmjs.com/package/htm) (JSX-like syntax - no transpiler necessary) - 923 B gzipped
-- [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) (JSX-like syntax - no transpiler necessary) - 4.3 KB gzipped
-- [lit-html](https://www.npmjs.com/package/lit-html) - 3.61 KB gzipped
-- [uhtml](https://www.npmjs.com/package/uhtml) - 3.02 KB gzipped
+- [htm](https://www.npmjs.com/package/htm) with [Preact](https://www.npmjs.com/package/preact) (JSX-like syntax - no transpiler necessary) - 4.45 KB gzipped
+- [lit-html](https://www.npmjs.com/package/lit-html) - 3.21 KB gzipped
+- [uhtml](https://www.npmjs.com/package/uhtml) - 3.04 KB gzipped
+- [css](https://docs.ficusjs.org/renderers/css/) - 204 B gzipped
 
 ## Read the full documentation
 
