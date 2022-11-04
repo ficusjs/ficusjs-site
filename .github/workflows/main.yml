@@ -18,8 +18,8 @@ jobs:
       - name: Set-up NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: 12
-      - run: npm install
+          node-version: 16
+      - run: npm install --force
       - run: npm run build
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v3

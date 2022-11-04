@@ -14,7 +14,7 @@ Create an `index.html` file and copy the following between the `<body>` tags.
 <hello-world></hello-world>
 
 <script type="module">
-import { createCustomElement } from 'https://cdn.skypack.dev/ficusjs@3/custom-element'
+import { createCustomElement } from 'https://cdn.skypack.dev/ficusjs@5/custom-element'
 
 createCustomElement('hello-world', {
   render () {

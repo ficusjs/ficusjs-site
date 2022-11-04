@@ -14,9 +14,9 @@ jobs:
       - name: Set-up NodeJS
         uses: actions/setup-node@v1
         with:
-          node-version: 12
+          node-version: 16
       - run: npm install -g surge
-      - run: npm install
+      - run: npm install --force
       - run: npm run build
       - run: surge ./build ficusjs-site.surge.sh --token ${{ secrets.SURGE_TOKEN }}
 #      - run: npm install

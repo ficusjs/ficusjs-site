@@ -11,4 +11,4 @@ Lightweight script loader for lazy loading ES modules and ES5 scripts or both ba
 
 ## Read the full documentation
 
-To read the full documentation visit [https://script.ficusjs.org](https://script.ficusjs.org)
+To read the full documentation visit [https://docs.ficusjs.org/script-loader](https://docs.ficusjs.org/script-loader)

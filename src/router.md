@@ -13,4 +13,4 @@ For multiple routes in a single page application, this simple client-side router
 
 ## Read the full documentation
 
-To read the full documentation visit [https://router.ficusjs.org](https://router.ficusjs.org)
+To read the full documentation visit [https://docs.ficusjs.org/router](https://docs.ficusjs.org/router)
